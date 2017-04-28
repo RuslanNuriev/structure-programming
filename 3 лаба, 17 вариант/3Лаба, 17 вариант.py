@@ -75,4 +75,24 @@ x = A*10 - summ
 print('Нужно иметь',abs(x),'грн, чтобы выжить 10 месяцев')
 '''
 
+# задание 6
+'''
+from math import sin, pi
+x = 0.1
+print(' x  |   y ')
+while x <= 3:
+    y = x**2 - sin(pi*x)
+    print(round(x,2),'|', round(y,2))
+    x += 0.2
+'''
 
+# задание 7
+'''
+from math import factorial
+x = int(input('x: '))
+n = int(input('n: '))
+f = 0
+for i in range(1, n+1):
+    f += ((x**(2*i))/factorial(i*2))
+print('ответ: ', f+1)
+'''
